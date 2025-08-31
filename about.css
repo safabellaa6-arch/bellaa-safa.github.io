@@ -1,0 +1,241 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: url('image.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+/* ====== Header ====== */
+header {
+  text-align: center;
+  padding: 40px 0;
+  background: rgba(0,0,0,0.7);
+  border-bottom: 3px solid #00e5ff;
+  box-shadow: 0 0 15px #00e5ff;
+}
+
+header h1 {
+  font-size: 42px;
+  margin: 0;
+  color: #00e5ff;
+  text-shadow: 0 0 10px #00e5ff, 0 0 20px #ff0077;
+}
+
+/* ====== Sections ====== */
+section {
+  background: rgba(0, 0, 0, 0.6);
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 20px;
+  width: 85%;
+  max-width: 1000px;
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* ====== العناوين ====== */
+h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #00e5ff;
+  border-bottom: 2px solid #ff0077;
+  padding-bottom: 5px;
+  display: inline-block;
+  text-shadow: 0 0 10px #ff0077;
+  position: relative;
+}
+
+h2::before {
+  content: '\f005';
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: -35px;
+  top: 0;
+  color: #ff0077;
+  font-size: 20px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ====== Personal Info ====== */
+.personal-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.personal-info ul li {
+  margin: 8px 0;
+  padding-left: 25px;
+  position: relative;
+}
+
+.personal-info ul li::before {
+  content: '\f058';
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  color: #00e5ff;
+}
+
+/* ====== Interests ====== */
+.interests .icons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.interests .icons div {
+  text-align: center;
+  margin: 15px;
+  transition: transform 0.3s ease, color 0.3s ease;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #00e5ff;
+}
+
+.interests .icons i {
+  font-size: 45px;
+  color: #00e5ff;
+  transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+  text-shadow: 0 0 15px #00e5ff;
+}
+
+.interests .icons div:hover i {
+  color: #ff0077;
+  transform: scale(1.2);
+  text-shadow: 0 0 20px #ff0077, 0 0 30px #ff0077;
+}
+
+.interests .icons p {
+  margin-top: 8px;
+  font-size: 18px;
+}
+
+/* ====== Skills ====== */
+.skills .skill-bars {
+  margin-top: 20px;
+}
+
+.skills .bar {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 16px;
+  gap: 15px;
+  position: relative;
+}
+
+.skills .bar p {
+  margin: 0;
+  font-size: 18px;
+  color: #00e5ff;
+  text-shadow: 0 0 8px #00e5ff;
+  flex-shrink: 0;
+}
+
+.skills .progress {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  height: 15px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.skills .progress span {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #00e5ff, #ff0077);
+  border-radius: 10px;
+  transition: width 1.5s ease-in-out;
+}
+
+.skills .percentage {
+  position: absolute;
+  right: 10px; 
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+  color: #ff0077;
+}
+
+/* ====== Services ====== */
+.services {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #00e5ff;
+  text-shadow: 0 0 10px #ff0077;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.card i {
+  font-size: 40px;
+  color: #00f2fe;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: #fff;
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.card p {
+  color: #ddd;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ====== متجاوبة ====== */
+@media(max-width: 500px){
+  .card i, .interests .icons i {
+    font-size: 35px;
+  }
+  .skills .bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .skills .progress {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 5px;
+  }
+}
