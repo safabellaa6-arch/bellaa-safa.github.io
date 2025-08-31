@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('image.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+    header {
+      text-align: center;
+      padding: 40px 0;
+      background: rgba(0,0,0,0.7);
+      border-bottom: 3px solid #00e5ff;
+      box-shadow: 0 0 15px #00e5ff;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 40px;
+      color: #00e5ff;
+      text-shadow: 0 0 10px #00e5ff, 0 0 20px #ff0077;
+    }
+    .contact-info {
+      text-align: center;
+      margin: 40px 0 20px 0;
+    }
+    .contact-info p {
+      margin: 8px 0;
+      font-size: 18px;
+    }
+    .contact-info a {
+      color: #00e5ff;
+      text-decoration: none;
+    }
+    .social-icons {
+      margin-top: 10px;
+    }
+    .social-icons a {
+      color: #00e5ff;
+      margin: 0 10px;
+      font-size: 24px;
+      transition: 0.3s;
+    }
+    .social-icons a:hover {
+      color: #ff0077;
+    }
+    .contact-form {
+      max-width: 500px;
+      margin: 20px auto 50px auto;
+      background: rgba(0,0,0,0.6);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+    .contact-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #00e5ff;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+    }
+    .contact-form textarea {
+      resize: none;
+      height: 120px;
+    }
+    .contact-form button {
+      width: 100%;
+      padding: 12px;
+      background: #00e5ff;
+      border: none;
+      border-radius: 8px;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .contact-form button:hover {
+      background: #00b8d4;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contact Me</h1>
+  </header>
+
+  <div class="contact-info">
+    <p>Email: <a href="mailto:bellaa.safa@univ-khenchela.dz">bellaa.safa@univ-khenchela.dz</a></p>
+    <div class="social-icons">
+      <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+
+  <div class="contact-form">
+    <h2>Send a Message</h2>
+    <form action="#" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="subject" placeholder="Subject" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</body>
+</html>
